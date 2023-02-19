@@ -76,7 +76,7 @@ header{
     display: none;
     width: max-content;
     overflow: auto;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .NavTab:hover .NavTabContents{
@@ -156,19 +156,26 @@ p::first-letter{
     display: grid;
     grid-row-gap: 1%;
     grid-column-gap: 1%;
-    grid-template-columns: repeat(10, 9%);
-    grid-template-rows: repeat(10, 9%);
+    grid-template-columns: repeat(17, 4.8%);
+    grid-template-rows: repeat(17, 4.8%);
     grid-template-areas:
-        ". . . . b b b . . ."
-        ". . . . b b b c c c"
-        "a a a a b b b c c c"
-        "a a a a b b b c c c"
-        "a a a a e e e c c c"
-        "a a a a e e e f f f"
-        ". d d d e e e f f f"
-        ". d d d e e e f f f"
-        ". d d d . . . f f f"
-        ". d d d . . . . . .";
+        ". . . . . b b b b b b . . . . . ."
+        ". . . . . b b b b b b c c c c c ."
+        ". . . . . b b b b b b c c c c c ."
+        "a a a a a b b b b b b c c c c c ."
+        "a a a a a b b b b b b c c c c c ."
+        "a a a a a b b b b b b c c c c c ."
+        "a a a a a e e e e e e c c c c c ."
+        "a a a a a e e e e e e c c c c c ."
+        "a a a a a e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d . . . . . . f f f f f f"
+        ". d d d d . . . . . . . . . . . ."
+        ". d d d d . . . . . . . . . . . .";
     overflow: hidden;
     border-radius: 10px;
 }
@@ -225,7 +232,7 @@ p::first-letter{
     width: max-content;
     overflow: auto;
     background: transparent;
-    border: 1px solid white;
+    /* border: 1px solid white; */
 }
 
 .Email:hover .ShowEmail{
