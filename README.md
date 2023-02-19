@@ -22,7 +22,11 @@ Work as an individual to create the following structure.
 
 ## Assets
 
-The following images include my personal portrait, the images in replaced to unfinished projects/works. 
+The following video present the appearance of my portfolio.
+
+
+https://user-images.githubusercontent.com/116051329/219952259-ad6ba35e-0938-4eb1-aed6-ab15b4b7c9fe.mov
+
 
 ## Note
 
