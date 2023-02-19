@@ -58,25 +58,22 @@ header{
     position: fixed;
     display: inline-block;
     top: 10px;
-    right: 10px;
-}
-
-.fa-solid{
-    height: 20px;
-    width: 20px;
+    right: 15px;
 }
 
 .NavTabContents{
     position: absolute;
-    top: 8px;
-    right: 8px;
+    padding-top: 22px;
+    top: 0px;
+    right: 0px;
     text-align: right;
     font-size: 20px;
     font-weight: lighter;
     display: none;
     width: max-content;
     overflow: auto;
-    border: 1px solid white;
+    background: transparent;
+    /* border: 1px solid white; */
 }
 
 .NavTab:hover .NavTabContents{
@@ -86,10 +83,12 @@ header{
 .NavTabContents a {
     display:block;
     color: white;
+    background: transparent;
 }
 
 .NavTabContents a:hover {
     color:white;
+    background: transparent;
     font-weight: bolder;
 }
 
@@ -156,19 +155,26 @@ p::first-letter{
     display: grid;
     grid-row-gap: 1%;
     grid-column-gap: 1%;
-    grid-template-columns: repeat(10, 9%);
-    grid-template-rows: repeat(10, 9%);
+    grid-template-columns: repeat(17, 4.8%);
+    grid-template-rows: repeat(17, 4.8%);
     grid-template-areas:
-        ". . . . b b b . . ."
-        ". . . . b b b c c c"
-        "a a a a b b b c c c"
-        "a a a a b b b c c c"
-        "a a a a e e e c c c"
-        "a a a a e e e f f f"
-        ". d d d e e e f f f"
-        ". d d d e e e f f f"
-        ". d d d . . . f f f"
-        ". d d d . . . . . .";
+        ". . . . . b b b b b b . . . . . ."
+        ". . . . . b b b b b b c c c c c ."
+        ". . . . . b b b b b b c c c c c ."
+        "a a a a a b b b b b b c c c c c ."
+        "a a a a a b b b b b b c c c c c ."
+        "a a a a a b b b b b b c c c c c ."
+        "a a a a a e e e e e e c c c c c ."
+        "a a a a a e e e e e e c c c c c ."
+        "a a a a a e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d e e e e e e f f f f f f"
+        ". d d d d . . . . . . f f f f f f"
+        ". d d d d . . . . . . . . . . . ."
+        ". d d d d . . . . . . . . . . . .";
     overflow: hidden;
     border-radius: 10px;
 }
@@ -218,14 +224,14 @@ p::first-letter{
 
 .ShowEmail {
     position: absolute;
-    bottom: 30px;
-    font-size: 20px;
+    bottom: 0px;
+    font-size: 24px;
     font-weight: lighter;
     display: none;
     width: max-content;
     overflow: auto;
-    background: transparent;
-    border: 1px solid white;
+    /* background: transparent; */
+    /* border: 1px solid white; */
 }
 
 .Email:hover .ShowEmail{
