@@ -49,11 +49,6 @@ header{
     margin-top: 5px;
 }
 
-/* button{
-    border: 0;
-    border-style: none;
-} */
-
 .NavTab{
     position: fixed;
     display: inline-block;
@@ -73,7 +68,6 @@ header{
     width: max-content;
     overflow: auto;
     background: transparent;
-    /* border: 1px solid white; */
 }
 
 .NavTab:hover .NavTabContents{
@@ -107,17 +101,14 @@ p::first-letter{
 
 .Works{
     position: relative;
-    /* margin-top: 60px; */
     margin: 60px auto;
     display: block;
     font-size: 24px;
     width: 75%;
     height: auto;
-    /* border: 2px solid red; */
 }
 
 .Works img{
-    /* display: flex;*/
     opacity: 1;
     margin: 2% 2% 0 2%;
     display: grid;
@@ -125,7 +116,6 @@ p::first-letter{
     height: 100%;
     width: 100%;
     border-radius: 10px;
-    /* border: 2px solid black; */
     overflow: hidden;
 }
 
@@ -143,7 +133,6 @@ p::first-letter{
     width: max-content;
     overflow: auto;
     background: transparent;
-    /* border: 1px solid white; */
 }
 
 .Works > section div:hover .ComingSoon {
@@ -151,7 +140,6 @@ p::first-letter{
 }
 
 .Group{
-    /* border: 2px solid blue; */
     display: grid;
     grid-row-gap: 1%;
     grid-column-gap: 1%;
@@ -230,37 +218,8 @@ p::first-letter{
     display: none;
     width: max-content;
     overflow: auto;
-    /* border: 1px solid white; */
 }
 
 .Email:hover .ShowEmail{
     display:block;
 }
-
-/* .float-right img{
-    float:right;
-    margin-right: 10%;
-} */
-
-/* .float-left img{
-    float: left;
-} */
-
-/* .Ooui{
-    display: flex;
-    align-self: flex-start;
-    width: 35%;
-} */
-
-/*.Catshew img{
-    height: 300px;
-    width:300px;
-}*/
-
-/*.Moscato img{
-    display: inline;
-    float: right;
-    margin: 20px;
-    width: 40%;
-    border-radius: 10px;
-}*/
