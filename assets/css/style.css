@@ -230,7 +230,7 @@ p::first-letter{
     display: none;
     width: max-content;
     overflow: auto;
-    /* background: transparent; */
+    background: transparent;
     /* border: 1px solid white; */
 }
 
