@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
     font-family: 'Gill Sans', Arial, sans-serif;
     color: white;
     background-color: rgb(107, 132, 105);
