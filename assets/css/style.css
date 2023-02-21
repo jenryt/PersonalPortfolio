@@ -100,6 +100,7 @@ p::first-letter{
 }
 
 .Works{
+    position:relative;
     margin: 60px auto;
     display: block;
     font-size: 24px;
@@ -138,8 +139,7 @@ p::first-letter{
 }
 
 .ComingSoon {
-    position: fixed;
-    top: 50%;
+    position: absolute;
     text-align: center;
     font-size: 30px;
     font-weight: lighter;
@@ -291,6 +291,16 @@ p::first-letter{
     margin: 25px auto;
     width: 80%;
     }
+
+    .ComingSoon {
+        position: absolute;
+        text-align: center;
+        font-size: 25px;
+        font-weight: lighter;
+        display: none;
+        width: max-content;
+        overflow: auto;
+        background: transparent;
 }
 
 @media screen and (max-width: 430px) {      /*iPhone 14 Pro Max*/
@@ -390,4 +400,16 @@ p::first-letter{
         background: transparent;
         font-weight: bolder;
     }
+
+    .ComingSoon {
+        position: absolute;
+        text-align: center;
+        font-size: 12px;
+        font-weight: lighter;
+        display: none;
+        width: max-content;
+        overflow: auto;
+        background: transparent;
+    }
+    
 }
