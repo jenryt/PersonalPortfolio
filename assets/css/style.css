@@ -1,6 +1,4 @@
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
     font-family: 'Gill Sans', Arial, sans-serif;
     color: white;
@@ -32,12 +30,13 @@ header{
 .BasicInfo{
     margin-top: 30%;
     border-bottom: solid white;
-    padding: 10px;
+    padding-left: 10px;
     float: right;
     width: 40%;
 }
 .Name {
-    margin-top: -6px;
+    margin-top: 1px;
+    font-size: 32px;
     letter-spacing: 2px;
     font-weight: lighter;
     font-family: 'Trebuchet MS', 'Courier New', 'Times New Roman', Times, serif
@@ -45,8 +44,11 @@ header{
 
 
 .Occupation {
+    font-size: 19px;
+    height: 20px;
     font-weight: lighter;
-    margin-top: 5px;
+    margin-top: 6px;
+    margin-bottom: 6px;
 }
 
 .NavTab{
@@ -89,6 +91,7 @@ header{
 .AboutMe{
     font-weight: lighter;
     font-size: 20px;
+    line-height: 24px;
     margin: 100px auto;
     width: 60%
 }
@@ -113,6 +116,7 @@ p::first-letter{
     width: 20%;
     text-align: right;
     font-size: 24px;
+    line-height: 30px;
 }
 
 /* QUESTION!!?
@@ -143,6 +147,8 @@ p::first-letter{
     text-align: center;
     font-size: 30px;
     font-weight: lighter;
+    line-height: 30px;
+    height: 35px;
     display: none;
     width: max-content;
     overflow: auto;
@@ -214,10 +220,13 @@ p::first-letter{
 }
 
 .ContactMe{
-    margin: 120px auto 60px auto;
+    position: relative;
+    bottom: 60px;
+    margin-top: 180px;
     border-bottom: 1px solid white;
     font-weight: lighter;
     font-size: 24px;
+    line-height: 30px;
     display: flex;
     justify-content:space-evenly;
 }
@@ -412,4 +421,13 @@ p::first-letter{
         background: transparent;
     }
     
+    .ShowEmail {
+        position: absolute;
+        bottom: 0px;
+        font-size: 12px;
+        font-weight: lighter;
+        display: none;
+        width: max-content;
+        overflow: auto;
+    }
 }
