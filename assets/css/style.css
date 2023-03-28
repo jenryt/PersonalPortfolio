@@ -1,151 +1,393 @@
-*{
-    box-sizing: border-box;
-    font-family: 'Gill Sans', Arial, sans-serif;
-    color: white;
-    background-color: rgb(107, 132, 105);
+* {
+  box-sizing: border-box;
+  font-family: "Gill Sans", Arial, sans-serif;
+  color: white;
+  background-color: rgb(107, 132, 105);
 }
 
-header{
-    height: 100vh;
+header {
+  height: 100vh;
 }
 
-.FeatureImage{
-    margin-top: 7vh;
-    margin-bottom: 7vh;
-    align-content: center;
-    width: 50%;
-    height: 86vh;
-    display: inline-block;
-    overflow-y: hidden;
+.FeatureImage {
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  align-content: center;
+  width: 50%;
+  height: 86vh;
+  display: inline-block;
+  overflow-y: hidden;
 }
 
-.FeatureImage img{
-    float: right;
-    border-top-left-radius: 50% 35%;
-    border-top-right-radius: 50% 35%;
-    max-height: 86vh;
-    max-width: 40vw;
+.FeatureImage img {
+  float: right;
+  border-top-left-radius: 50% 35%;
+  border-top-right-radius: 50% 35%;
+  max-height: 86vh;
+  max-width: 40vw;
 }
 
-.BasicInfo{
-    margin-top: 30%;
-    border-bottom: solid white;
-    padding-left: 10px;
-    float: right;
-    width: 40%;
+.BasicInfo {
+  margin-top: 30%;
+  border-bottom: solid white;
+  padding-left: 10px;
+  float: right;
+  width: 40%;
 }
 .Name {
-    margin-top: 1px;
-    font-size: 32px;
-    letter-spacing: 2px;
-    font-weight: lighter;
-    font-family: 'Trebuchet MS', 'Courier New', 'Times New Roman', Times, serif
+  margin-top: 1px;
+  font-size: 32px;
+  letter-spacing: 2px;
+  font-weight: lighter;
+  font-family: "Trebuchet MS", "Courier New", "Times New Roman", Times, serif;
 }
-
 
 .Occupation {
-    font-size: 19px;
-    height: 20px;
-    font-weight: lighter;
-    margin-top: 6px;
-    margin-bottom: 6px;
+  font-size: 19px;
+  height: 20px;
+  font-weight: lighter;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
-.NavTab{
-    position: fixed;
-    display: inline-block;
-    top: 10px;
-    right: 15px;
+.NavTab {
+  position: fixed;
+  display: inline-block;
+  top: 10px;
+  right: 15px;
 }
 
-.NavTabContents{
-    position: absolute;
-    padding-top: 22px;
-    top: 0px;
-    right: 0px;
-    text-align: right;
-    font-size: 20px;
-    font-weight: lighter;
-    display: none;
-    width: max-content;
-    overflow: auto;
-    background: transparent;
+.NavTabContents {
+  position: absolute;
+  padding-top: 22px;
+  top: 0px;
+  right: 0px;
+  text-align: right;
+  font-size: 20px;
+  font-weight: lighter;
+  display: none;
+  width: max-content;
+  overflow: auto;
+  background: transparent;
 }
 
-.NavTab:hover .NavTabContents{
-    display: block;
+.NavTab:hover .NavTabContents {
+  display: block;
 }
 
 .NavTabContents a {
-    display:block;
-    color: white;
-    background: transparent;
+  display: block;
+  color: white;
+  background: transparent;
 }
 
 .NavTabContents a:hover {
-    color:white;
-    background: transparent;
-    font-weight: bolder;
+  color: white;
+  background: transparent;
+  font-weight: bolder;
 }
 
-.AboutMe{
-    font-weight: lighter;
-    font-size: 20px;
-    line-height: 24px;
-    margin: 100px auto;
-    width: 60%
+.AboutMe {
+  font-weight: lighter;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 100px auto;
+  width: 60%;
 }
 
-p::first-letter{
-    initial-letter: '1.7' 1;
-    font-weight: bolder;
-    margin-right: 0.1em
+p::first-letter {
+  initial-letter: "1.7" 1;
+  font-weight: bolder;
+  margin-right: 0.1em;
 }
 
-.Works{
-    position:relative;
-    margin: 60px auto;
-    display: block;
-    font-size: 24px;
-    width: 75%;
-    height:max-content;
-}
-
-.WorksTag{
-    border-bottom: solid white;
-    width: 20%;
-    text-align: right;
-    font-size: 24px;
-    line-height: 30px;
-}
-
-/* QUESTION!!?
 .WorksTag {
-    border-bottom: solid white;
-    width: 20%;
-    text-align: right;
-    font-size: 24px;
-    float: left;
+  border-bottom: solid white;
+  width: 20%;
+  text-align: right;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.Works {
+  position: relative;
+  margin: 60px auto;
+  display: block;
+  font-size: 24px;
+  width: 80%;
+  height: 110vh;
+  overflow-y: scroll;
+}
+
+.Works img {
+  opacity: 0.7;
+  margin-bottom: 2%;
+  object-fit: cover;
+  height: 60vh;
+  width: 40vw;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.Works > div img:hover {
+  opacity: 1;
+}
+
+.Works > div {
+  position: relative;
+}
+
+.Works > div img:hover + .ComingSoon {
+  display: block;
+}
+
+/* .Works p {
+  font-weight: lighter;
+  font-size: 17px;
+  position: absolute;
+  line-height: 20px;
+  width: 45%;
+  height: 50vh;
+  top: 5vh;
+  right: 3%;
+  background-color: transparent;
+  overflow-y: scroll;
 } */
 
-.Works img{
-    opacity: 1;
-    margin: 2% 2% 0 2%;
-    object-fit: cover;
-    height: 100%;
+.imgRight > .ComingSoon {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+  line-height: 30px;
+  height: 35px;
+  display: none;
+  width: max-content;
+  overflow: auto;
+  background: transparent;
+  bottom: 50%;
+}
+
+.imgRight > img {
+  position: relative;
+  left: 50%;
+}
+
+.imgRight p {
+  font-weight: lighter;
+  font-size: 17px;
+  position: absolute;
+  line-height: 20px;
+  width: 45%;
+  height: 50vh;
+  top: 5vh;
+  left: 3%;
+  background-color: transparent;
+  overflow-y: scroll;
+}
+
+.imgLeft > .ComingSoon {
+  position: absolute;
+  text-align: center;
+  font-size: 30px;
+  font-weight: lighter;
+  line-height: 30px;
+  height: 35px;
+  display: none;
+  width: max-content;
+  overflow: auto;
+  background: transparent;
+  bottom: 50%;
+  right: 2%;
+}
+
+.imgLeft p {
+  font-weight: lighter;
+  font-size: 17px;
+  position: absolute;
+  line-height: 20px;
+  width: 45%;
+  height: 50vh;
+  top: 5vh;
+  right: 3%;
+  background-color: transparent;
+  overflow-y: scroll;
+}
+/* .Group {
+  display: grid;
+  height: 100%;
+  grid-row-gap: 1%;
+  grid-column-gap: 1%;
+  grid-template-columns: repeat(17, 4.8%);
+  grid-template-rows: repeat(23, 4.8%);
+  grid-template-areas: */
+/* "g g g g g g g g g g . . . . . . ."
+    "g g g g g g g g g g . . . . . . ."
+    "g g g g g g g g g g . . . . . . ."
+    "g g g g g g g g g g . . . . . . ."
+    "g g g g g g g g g g . . . . . . ."
+    "g g g g g g g g g g . . . . . . ."
+    "g g g g g g g g g g . . . . . . ."
+    "g g g g g g g g g g . . . . . . ."
+    ". . . . c c c c c c a a a a a a a"
+    ". . . . c c c c c c a a a a a a a"
+    ". . . . c c c c c c a a a a a a a"
+    ". . . . c c c c c c a a a a a a a"
+    ". . . . c c c c c c a a a a a a a"
+    ". b b b b b b b e e e e e e . . ."
+    ". b b b b b b b e e e e e e . . ."
+    ". b b b b b b b e e e e e e . . ."
+    ". b b b b b b b e e e e e e . . ."
+    ". b b b b b b b e e e e e e . . ."
+    ". . . . d d d d d d f f f f f f f"
+    ". . . . d d d d d d f f f f f f f"
+    ". . . . d d d d d d f f f f f f f"
+    ". . . . d d d d d d f f f f f f f"
+    ". . . . d d d d d d f f f f f f f"; */
+
+/* ". . . . . b b b b b b . . . . . ."
+    ". . . . . b b b b b b c c c c c ."
+    ". . . . . b b b b b b c c c c c ."
+    "a a a a a b b b b b b c c c c c ."
+    "a a a a a b b b b b b c c c c c ."
+    "a a a a a b b b b b b c c c c c ."
+    "a a a a a e e e e e e c c c c c ."
+    "a a a a a e e e e e e c c c c c ."
+    "a a a a a e e e e e e f f f f f f"
+    ". d d d d e e e e e e f f f f f f"
+    ". d d d d e e e e e e f f f f f f"
+    ". d d d d e e e e e e f f f f f f"
+    ". d d d d e e e e e e f f f f f f"
+    ". d d d d e e e e e e f f f f f f"
+    ". d d d d . . . . . . f f f f f f"
+    ". d d d d . . . . . . . . . . . ."
+    ". d d d d . . . . . . . . . . . ."; */
+/* overflow: scroll;
+  border-radius: 10px;
+}
+
+.theSiteYouCamp {
+  grid-area: g;
+  object-fit: cover;
+}
+
+.Ooui {
+  grid-area: a;
+  object-fit: cover;
+}
+
+.Catshew {
+  grid-area: b;
+  object-fit: cover;
+}
+
+.Pie {
+  grid-area: c;
+  object-fit: cover;
+}
+
+.Pane {
+  grid-area: d;
+  object-fit: cover;
+}
+
+.Moscato {
+  grid-area: e;
+  object-fit: cover;
+}
+
+.Milktea {
+  grid-area: f;
+  object-fit: cover;
+} */
+
+.ContactMe {
+  position: relative;
+  bottom: 60px;
+  margin-top: 180px;
+  border-bottom: 1px solid white;
+  font-weight: lighter;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Email {
+  position: relative;
+}
+
+.ShowEmail {
+  position: absolute;
+  bottom: 0px;
+  font-size: 24px;
+  font-weight: lighter;
+  display: none;
+  width: max-content;
+  overflow: auto;
+}
+
+.Email:hover .ShowEmail {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  /*iPad mini*/
+  .FeatureImage {
+    margin-top: 7vh;
+    /* margin-bottom: 20vh; */
+    align-content: center;
     width: 100%;
-    border-radius: 10px;
-    overflow: hidden;
-}
+    height: 70vh;
+    display: inline-block;
+    overflow-y: hidden;
+  }
 
-.Works > section div img:hover {
-    opacity: 0.5;
-}
+  .FeatureImage img {
+    /* float: right; */
+    margin-right: 19vw;
+    border-top-left-radius: 50% 35%;
+    border-top-right-radius: 50% 35%;
+    max-height: 70vh;
+    max-width: 70vw;
+  }
 
-.ComingSoon {
+  .BasicInfo {
+    display: block;
+    margin-top: 0vh;
+    margin-bottom: 7vh;
+    border-bottom: solid white;
+    padding: 10px;
+    /* float: right; */
+    width: 60%;
+  }
+
+  .Name {
+    display: inline;
+    margin-top: -6px;
+    letter-spacing: 2px;
+    font-size: 47px;
+    font-weight: lighter;
+    font-family: "Trebuchet MS", "Courier New", "Times New Roman", Times, serif;
+  }
+
+  .Occupation {
+    font-weight: lighter;
+    font-size: 33px;
+    margin-top: 5px;
+  }
+
+  .AboutMe {
+    font-weight: lighter;
+    font-size: 26px;
+    margin: 25px auto;
+    width: 80%;
+  }
+
+  .imgRight > .ComingSoon {
     position: absolute;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: lighter;
     line-height: 30px;
     height: 35px;
@@ -153,281 +395,160 @@ p::first-letter{
     width: max-content;
     overflow: auto;
     background: transparent;
-}
+    bottom: 50%;
+  }
 
-.Works > section div:hover .ComingSoon {
-    display: block;
-}
-
-.Group{
-    display: grid;
-    grid-row-gap: 1%;
-    grid-column-gap: 1%;
-    grid-template-columns: repeat(17, 4.8%);
-    grid-template-rows: repeat(17, 4.8%);
-    grid-template-areas:
-        ". . . . . b b b b b b . . . . . ."
-        ". . . . . b b b b b b c c c c c ."
-        ". . . . . b b b b b b c c c c c ."
-        "a a a a a b b b b b b c c c c c ."
-        "a a a a a b b b b b b c c c c c ."
-        "a a a a a b b b b b b c c c c c ."
-        "a a a a a e e e e e e c c c c c ."
-        "a a a a a e e e e e e c c c c c ."
-        "a a a a a e e e e e e f f f f f f"
-        ". d d d d e e e e e e f f f f f f"
-        ". d d d d e e e e e e f f f f f f"
-        ". d d d d e e e e e e f f f f f f"
-        ". d d d d e e e e e e f f f f f f"
-        ". d d d d e e e e e e f f f f f f"
-        ". d d d d . . . . . . f f f f f f"
-        ". d d d d . . . . . . . . . . . ."
-        ". d d d d . . . . . . . . . . . .";
-    overflow: hidden;
-    border-radius: 10px;
-    /* width: 90%;
-    padding: 25px auto auto 12%; */
-}
-
-.Ooui{
-    grid-area: a;
-    object-fit: cover;
-}
-
-.Catshew{
-    grid-area: b;
-    object-fit: cover;
-}
-
-.Pie{
-    grid-area: c;
-    object-fit: cover;
-}
-
-.Pane{
-    grid-area: d;
-    object-fit: cover;
-}
-
-.Moscato{
-    grid-area: e;
-    object-fit: cover;
-}
-
-.Milktea{
-    grid-area: f;
-    object-fit: cover;
-}
-
-.ContactMe{
-    position: relative;
-    bottom: 60px;
-    margin-top: 180px;
-    border-bottom: 1px solid white;
-    font-weight: lighter;
-    font-size: 24px;
-    line-height: 30px;
-    display: flex;
-    justify-content:space-evenly;
-}
-
-.Email {
-    position: relative;
-}
-
-.ShowEmail {
+  .imgLeft > .ComingSoon {
     position: absolute;
-    bottom: 0px;
-    font-size: 24px;
+    text-align: center;
+    font-size: 25px;
     font-weight: lighter;
+    line-height: 30px;
+    height: 35px;
     display: none;
     width: max-content;
     overflow: auto;
+    background: transparent;
+    bottom: 50%;
+    right: 2%;
+  }
 }
 
-.Email:hover .ShowEmail{
-    display:block;
-}
+@media screen and (max-width: 430px) {
+  /*iPhone 14 Pro Max*/
+  .FeatureImage {
+    margin-top: 7vh;
+    /* margin-bottom: 20vh; */
+    align-content: center;
+    width: 100%;
+    max-height: 57vh;
+    display: inline-block;
+    overflow-y: hidden;
+  }
 
-@media screen and (max-width: 768px) {      /*iPad mini*/
-    .FeatureImage{
-        margin-top: 7vh;
-        /* margin-bottom: 20vh; */
-        align-content: center;
-        width: 100%;
-        height: 70vh;
-        display: inline-block;
-        overflow-y: hidden;
-    }
+  .FeatureImage img {
+    /* float: right; */
+    margin-right: 19vw;
+    border-top-left-radius: 50% 35%;
+    border-top-right-radius: 50% 35%;
+    max-height: 57vh;
+    max-width: 70vw;
+  }
 
-    .FeatureImage img{
-        /* float: right; */
-        margin-right: 19vw;
-        border-top-left-radius: 50% 35%;
-        border-top-right-radius: 50% 35%;
-        max-height: 70vh;
-        max-width: 70vw;
-    }
+  .BasicInfo {
+    display: block;
+    margin-top: 0vh;
+    margin-bottom: 7vh;
+    border-bottom: solid white;
+    padding: 5px;
+    /* float: right; */
+    width: 75%;
+  }
 
-    .BasicInfo{
-        display: block;
-        margin-top: 0vh;
-        margin-bottom: 7vh;
-        border-bottom: solid white;
-        padding: 10px;
-        /* float: right; */
-        width: 60%;
-    }
-
-    .Name {
-        display: inline;
-        margin-top: -6px;
-        letter-spacing: 2px;
-        font-size: 47px;
-        font-weight: lighter;
-        font-family: 'Trebuchet MS', 'Courier New', 'Times New Roman', Times, serif
-    }
-
-    .Occupation {
-        font-weight: lighter;
-        font-size: 33px;
-        margin-top: 5px;
-    }
-    
-    .AboutMe {
+  .Name {
+    display: inline;
+    margin-top: -6px;
+    letter-spacing: 2px;
+    font-size: 30px;
     font-weight: lighter;
-    font-size: 26px;
-    margin: 25px auto;
-    width: 80%;
-    }
+    font-family: "Trebuchet MS", "Courier New", "Times New Roman", Times, serif;
+  }
 
-    .ComingSoon {
-        position: absolute;
-        text-align: center;
-        font-size: 25px;
-        font-weight: lighter;
-        display: none;
-        width: max-content;
-        overflow: auto;
-        background: transparent;
-}
+  .Occupation {
+    font-weight: lighter;
+    font-size: 24px;
+    margin-top: 5px;
+  }
 
-@media screen and (max-width: 430px) {      /*iPhone 14 Pro Max*/
-    .FeatureImage{
-        margin-top: 7vh;
-        /* margin-bottom: 20vh; */
-        align-content: center;
-        width: 100%;
-        max-height: 57vh;
-        display: inline-block;
-        overflow-y: hidden;
-    }
-
-    .FeatureImage img{
-        /* float: right; */
-        margin-right: 19vw;
-        border-top-left-radius: 50% 35%;
-        border-top-right-radius: 50% 35%;
-        max-height: 57vh;
-        max-width: 70vw;
-    }
-
-    .BasicInfo{
-        display: block;
-        margin-top: 0vh;
-        margin-bottom: 7vh;
-        border-bottom: solid white;
-        padding: 5px;
-        /* float: right; */
-        width: 75%;
-    }
-
-    .Name {
-        display: inline;
-        margin-top: -6px;
-        letter-spacing: 2px;
-        font-size: 30px;
-        font-weight: lighter;
-        font-family: 'Trebuchet MS', 'Courier New', 'Times New Roman', Times, serif
-    }
-
-    .Occupation {
-        font-weight: lighter;
-        font-size: 24px;
-        margin-top: 5px;
-    }
-    
-    .AboutMe {
+  .AboutMe {
     font-weight: lighter;
     font-size: 18px;
     margin: 25px auto;
     width: 70%;
-    }
+  }
 
-    .WorksTag {
-        border-bottom: solid white;
-        width: 33%;
-        text-align: right;
-        font-size: 24px;
-    }
+  .WorksTag {
+    border-bottom: solid white;
+    width: 33%;
+    text-align: right;
+    font-size: 24px;
+  }
 
-    .ContactMe {
-        margin: 120px auto 60px auto;
-        border-bottom: 1px solid white;
-        font-weight: lighter;
-        font-size: 18px;
-        display: flex;
-        justify-content: space-evenly;
-    }
+  .ContactMe {
+    margin: 120px auto 60px auto;
+    border-bottom: 1px solid white;
+    font-weight: lighter;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-    .NavTabContents{
-        position: absolute;
-        top: -22px;
-        right: 22px;
-        font-size: 18px;
-        font-weight: lighter;
-        display: none;
-        overflow: auto;
-        width: 100vw;
-        background: rgb(107, 132, 105);
-        }
-    
-    .NavTab:hover .NavTabContents{
-        display: inline;
-    }
-    
-    .NavTabContents a {
-        display:inline-flex;
-        align-content: space-between;
-        color: white;
-        background: transparent;
-        margin-right:9px;
-    }
-    
-    .NavTabContents a:hover {
-        color:white;
-        background: transparent;
-        font-weight: bolder;
-    }
+  .NavTabContents {
+    position: absolute;
+    top: -22px;
+    right: 22px;
+    font-size: 18px;
+    font-weight: lighter;
+    display: none;
+    overflow: auto;
+    width: 100vw;
+    background: rgb(107, 132, 105);
+  }
 
-    .ComingSoon {
-        position: absolute;
-        text-align: center;
-        font-size: 12px;
-        font-weight: lighter;
-        display: none;
-        width: max-content;
-        overflow: auto;
-        background: transparent;
-    }
-    
-    .ShowEmail {
-        position: absolute;
-        bottom: 0px;
-        font-size: 12px;
-        font-weight: lighter;
-        display: none;
-        width: max-content;
-        overflow: auto;
-    }
+  .NavTab:hover .NavTabContents {
+    display: inline;
+  }
+
+  .NavTabContents a {
+    display: inline-flex;
+    align-content: space-between;
+    color: white;
+    background: transparent;
+    margin-right: 9px;
+  }
+
+  .NavTabContents a:hover {
+    color: white;
+    background: transparent;
+    font-weight: bolder;
+  }
+
+  .imgRight > .ComingSoon {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 30px;
+    height: 35px;
+    display: none;
+    width: max-content;
+    overflow: auto;
+    background: transparent;
+    bottom: 50%;
+  }
+
+  .imgLeft > .ComingSoon {
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    font-weight: lighter;
+    line-height: 30px;
+    height: 35px;
+    display: none;
+    width: max-content;
+    overflow: auto;
+    background: transparent;
+    bottom: 50%;
+    right: 2%;
+  }
+
+  .ShowEmail {
+    position: absolute;
+    bottom: 0px;
+    font-size: 12px;
+    font-weight: lighter;
+    display: none;
+    width: max-content;
+    overflow: auto;
+  }
 }
