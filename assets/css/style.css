@@ -123,8 +123,8 @@ p::first-letter {
   opacity: 0.7;
   margin-bottom: 2%;
   object-fit: cover;
-  height: 60vh;
-  width: 40vw;
+  height: 50vh;
+  width: 33vw;
   border-radius: 10px;
   overflow: hidden;
 }
@@ -139,6 +139,22 @@ p::first-letter {
 
 .Works > div img:hover + .ComingSoon {
   display: block;
+}
+
+.featuredProj {
+  padding-bottom: 1%;
+  border-bottom: 2px solid white;
+  margin-bottom: 2%;
+}
+
+.featuredProj img {
+  opacity: 0.7;
+  margin-bottom: 2%;
+  object-fit: cover;
+  height: 60vh;
+  width: 40vw;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 /* .Works p {
@@ -198,7 +214,7 @@ p::first-letter {
   overflow: auto;
   background: transparent;
   bottom: 50%;
-  right: 2%;
+  right: 9%;
 }
 
 .imgLeft p {
