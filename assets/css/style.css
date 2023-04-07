@@ -157,19 +157,6 @@ p::first-letter {
   overflow: hidden;
 }
 
-/* .Works p {
-  font-weight: lighter;
-  font-size: 17px;
-  position: absolute;
-  line-height: 20px;
-  width: 45%;
-  height: 50vh;
-  top: 5vh;
-  right: 3%;
-  background-color: transparent;
-  overflow-y: scroll;
-} */
-
 .imgRight > .ComingSoon {
   position: absolute;
   text-align: center;
@@ -199,7 +186,6 @@ p::first-letter {
   top: 5vh;
   left: 3%;
   background-color: transparent;
-  overflow-y: scroll;
 }
 
 .imgLeft > .ComingSoon {
@@ -227,7 +213,6 @@ p::first-letter {
   top: 5vh;
   right: 3%;
   background-color: transparent;
-  overflow-y: scroll;
 }
 /* .Group {
   display: grid;
@@ -345,6 +330,10 @@ p::first-letter {
 
 .Email:hover .ShowEmail {
   display: block;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 @media screen and (max-width: 768px) {
