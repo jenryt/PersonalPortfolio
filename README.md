@@ -1,33 +1,17 @@
-# UCB_Bootcamp_Module_2-Creating professional portfolio 
+# Personal Portfolio
 
-Work as an individual to create the following structure.
+Welcome to my personal portfolio! This website showcases my projects and provides a brief introduction about me. As I continue to grow my knowledge in the field of full stack development, I will update and add more content to this site.
 
-* As a developer, I want to create a website that allows me to introduce myself, to showcase my works, and to include my contact information for the potential employer.
+## How to Use
 
-## Acceptance Criteria
-
-* It is done when my personal portrait and basic information (name, occupation, etc.) is included, and my portrait is in the largest setting compared to all other images.
-
-* It is done when I provide a section to showcase my works and projects.
-
-* It is done when I provide my contact information and my personal page (linked-in, GitHub, etc) to allow the potential employer to view my background and a means of reaching out to me.
-
-* It is done when anchor tabs will redirect the users to the corresponding section of my page.
-
-* It is done when each project in my works section will take the users to the corresponding pages, or giving proper messages informing the users that the projects aren’t currently available. 
-
-* It is done when the tabs in my contact section will redirect the users to the corresponding websites. 
-
-* It is done when the content readjusts to fit different screen size. 
+1. Upon loading the page, you will see my name, occupation, and personal photo at the top of the page.
+2. On the top right corner of the site, there's a navigation bar that displays a dropdown list when hovered over.
+3. The dropdown list provides shortcuts to different topics on the site, such as "About Me," "Works,” and "Contact Me." Clicking on a topic will navigate you to the corresponding part of the site.
+4. My projects are listed under "Works,” where you can scroll through and see a brief introduction to each project, along with a link to the project site. For upcoming projects, placeholder images are provided, and a message is displayed when you click on them.
+5. At the bottom of the site, you can find my personal contact information, including my email address, LinkedIn page, and GitHub page.
 
 ## Assets
 
-The following video present the appearance of my portfolio.
+Here's the link to my Personal Portfolio: https://jenryt.github.io/PersonalPortfolio/
 
-
-https://user-images.githubusercontent.com/116051329/219952259-ad6ba35e-0938-4eb1-aed6-ab15b4b7c9fe.mov
-
-
-## Note
-
-* In this module, there is no work/project available to provide. Temporary images are provided to demonstrate the layout of Works section. 
+Check out this video for a visual tour of my portfolio:
