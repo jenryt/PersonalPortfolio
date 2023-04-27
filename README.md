@@ -12,7 +12,7 @@ Welcome to my personal portfolio! This website showcases my projects and provide
 
 ## Assets
 
-Here's the link to my Personal Portfolio: https://jenryt.github.io/PersonalPortfolio/
+Here's the link to my Portfolio: https://jenryt.github.io/PersonalPortfolio/
 
 The following images are sneak peek of my portfolio:
 <img src="./assets/images/SiteDemo/Screenshot 2023-04-27 at 08.37.36.png" alt="">
