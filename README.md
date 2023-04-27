@@ -15,3 +15,4 @@ Welcome to my personal portfolio! This website showcases my projects and provide
 Here's the link to my Personal Portfolio: https://jenryt.github.io/PersonalPortfolio/
 
 Check out this video for a visual tour of my portfolio:
+[myPortfolioDemo.webm](https://user-images.githubusercontent.com/116051329/234911644-f860350b-04ce-466b-888d-45f36a5c29fb.webm)
